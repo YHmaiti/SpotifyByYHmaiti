@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Web Application that represents a music player using the spotify API, React, JS, CSS, Firebase, material-ui, JSON and other technologies. Made by Yohan Hmaiti
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Summary
+-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-This app represents a music player using the spotify api with additional edits.
+-The main technologies used are ReactJS, JS, CSS, JSON, Firebase, material-UI, nodeJS.
+-The app allows paying song in real time with the spotify app, for example stopping the song on your spotify app will also stop it here. Same foes for playing it and volume adjustment wise.
+-The app allows importing the playlists the user has on spotify, his liked songs, discover weekly and allows a dynamic iteration through the songs and also enables the user to use the search bar as in spotify.
+-The app allows the user to login with their spotify account through the spotify api in order for the app to gather information such as: playlists, last songs and so on...
+-The app allows liking songs, following artists, sharing songs and so on...
 
-## Available Scripts
+##NOTE:
 
-In the project directory, you can run:
+This app was made for solely developing skills and advance learning of the tools mentioned, the app was disabled for privacy purposes (the spotify dev credential token was removed and the firebase hosting was disabled temporarily), if the program is used by anyone for any purpose they are responsible for the outcome on their own.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+->next: I am hoping to work on a database for the app to fix some log in issues and solidify the storing and manipulation of the user token after their login.

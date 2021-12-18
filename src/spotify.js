@@ -2,7 +2,7 @@ export const authEndpoint = "https://accounts.spotify.com/authorize";
 
 const redirectUri = "http://localhost:3000/";
 
-const clientId = "98060ac57ec9416796d819be79ce1f37";
+const clientId = ""; // token was removed for privacy purposes until the website gets deployed 100%
 
 const scopes = [
     "user-read-currently-playing",

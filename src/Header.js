@@ -1,21 +1,18 @@
-import React from "react";
-import "./Header.css";
-import { useStateValue } from "./StateProvider";
+// still working on the user credential handling here...
 import { Avatar } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import { useEffect } from "react";
+import React from "react";
+import "./Header.css";
+import { useStateValue } from "./StateProvider";
 
-function Header({ spotify }) {
-    const [{ user }, dispatch] = useStateValue();
-
+function Header({spotify}) {
+    const [{user}, dispatch] = useStateValue();
     return (
         <div className="header">
             <div className="header__left">
                 <SearchIcon />
-                <input
-                    placeholder="Search for Artists, Songs, or Podcasts "
-                    type="text"
-                />
+                <input placeholder="Search for Artists, Songs, or Podcasts " type="text"/>
             </div>
             <div className="header__right">
                 <Avatar src={user?.images[0].url} alt={user?.display_name}/>
@@ -24,5 +21,4 @@ function Header({ spotify }) {
         </div>
     );
 }
-
 export default Header;

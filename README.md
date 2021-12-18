@@ -1,5 +1,5 @@
 # Web Application that represents a music player using the spotify API, React, JS, CSS, Firebase, material-ui, JSON and other technologies. Made by Yohan Hmaiti
-
+#                     (For Learning Purpose Only!)
 ## Summary
 -This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 -This app represents a music player using the spotify api with additional edits.

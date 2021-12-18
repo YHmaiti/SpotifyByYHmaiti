@@ -1,9 +1,9 @@
-# Web Application that represents a music player using the spotify API, React, JS, CSS, Firebase, material-ui, JSON and other technologies. Made by Yohan Hmaiti
-#                     (For Learning Purpose Only!)
+# Web Application that represents a music player using the spotify API, React, JS, CSS, HTML, Firebase, material-ui, JSON and other technologies. Made by Yohan Hmaiti
+#                     (For Learning Purpose Only, all personal tokens were removed from safety including spotify dev ID and Firebase IDs!)
 ## Summary
 -This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 -This app represents a music player using the spotify api with additional edits.
--The main technologies used are ReactJS, JS, CSS, JSON, Firebase, material-UI, nodeJS.
+-The main technologies used are ReactJS, JS, CSS, HTML, JSON, Firebase, material-UI, nodeJS.
 -The app allows paying song in real time with the spotify app, for example stopping the song on your spotify app will also stop it here. Same foes for playing it and volume adjustment wise.
 -The app allows importing the playlists the user has on spotify, his liked songs, discover weekly and allows a dynamic iteration through the songs and also enables the user to use the search bar as in spotify.
 -The app allows the user to login with their spotify account through the spotify api in order for the app to gather information such as: playlists, last songs and so on...

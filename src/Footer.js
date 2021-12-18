@@ -13,23 +13,17 @@ import { Grid, Slider } from "@material-ui/core";
 
 function Footer({ spotify }) {
     const [{ token, item, playing }, dispatch] = useStateValue();
-
-    useEffect(() => {
-        spotify.getMyCurrentPlaybackState().then((r) => {
-            console.log(r);
-
+    useEffect(() => {spotify.getMyCurrentPlaybackState().then((r) => { console.log(r);
             dispatch({
                 type: "SET_PLAYING",
                 playing: r.is_playing,
             });
-
             dispatch({
                 type: "SET_ITEM",
                 item: r.item,
             });
         });
     }, [spotify]);
-
     const handlePlayPause = () => {
         if (playing) {
             spotify.pause();
@@ -45,10 +39,7 @@ function Footer({ spotify }) {
             });
         }
     };
-
-    const skipNext = () => {
-        spotify.skipToNext();
-        spotify.getMyCurrentPlayingTrack().then((r) => {
+    const skipNext = () => {spotify.skipToNext(); spotify.getMyCurrentPlayingTrack().then((r) => {
             dispatch({
                 type: "SET_ITEM",
                 item: r.item,
@@ -59,10 +50,7 @@ function Footer({ spotify }) {
             });
         });
     };
-
-    const skipPrevious = () => {
-        spotify.skipToPrevious();
-        spotify.getMyCurrentPlayingTrack().then((r) => {
+    const skipPrevious = () => {spotify.skipToPrevious();spotify.getMyCurrentPlayingTrack().then((r) => {
             dispatch({
                 type: "SET_ITEM",
                 item: r.item,
@@ -73,15 +61,10 @@ function Footer({ spotify }) {
             });
         });
     };
-
     return (
         <div className="footer">
             <div className="footer__left">
-                <img
-                    className="footer__albumLogo"
-                    src={item?.album.images[0].url}
-                    alt={item?.name}
-                />
+                <img className="footer__albumLogo" src={item?.album.images[0].url} alt={item?.name}/>
                 {item ? (
                     <div className="footer__songInfo">
                         <h4>{item.name}</h4>
@@ -94,22 +77,13 @@ function Footer({ spotify }) {
                     </div>
                 )}
             </div>
-
             <div className="footer__center">
                 <ShuffleIcon className="footer__green" />
                 <SkipPreviousIcon onClick={skipNext} className="footer__icon" />
                 {playing ? (
-                    <PauseCircleOutlineIcon
-                        onClick={handlePlayPause}
-                        fontSize="large"
-                        className="footer__icon"
-                    />
-                ) : (
-                    <PlayCircleOutlineIcon
-                        onClick={handlePlayPause}
-                        fontSize="large"
-                        className="footer__icon"
-                    />
+                    <PauseCircleOutlineIcon onClick={handlePlayPause} fontSize="large" className="footer__icon"/>
+                    ) : (
+                        <PlayCircleOutlineIcon onClick={handlePlayPause} fontSize="large" className="footer__icon" />
                 )}
                 <SkipNextIcon onClick={skipPrevious} className="footer__icon" />
                 <RepeatIcon className="footer__green" />
@@ -130,5 +104,4 @@ function Footer({ spotify }) {
         </div>
     );
 }
-
 export default Footer;

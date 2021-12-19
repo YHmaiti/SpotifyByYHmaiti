@@ -18,4 +18,4 @@
 ##NOTE:
 This app was made for solely developing skills and advance learning of the tools mentioned, the app was disabled for privacy purposes (the spotify dev credential token was removed and the firebase hosting was disabled temporarily), if the program is used by anyone for any purpose they are responsible for the outcome on their own.
 
-->next: I am hoping to work on a database for the app to fix some log in issues and solidify the storing and manipulation of the user token after their login.
+->next: I am hoping to work on a database for the app to allow the log in of several users at once and solidify the storing and manipulation of the users tokens after their login. In addition, to also be sure that I can deploy the website safely.

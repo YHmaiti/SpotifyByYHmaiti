@@ -1,30 +1,16 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
-
 const redirectUri = "http://localhost:3000/";
+const clientId = ""; // token was removed for privacy purposes until the website gets deployed 100% and to avoid any copyright issues
 
-const clientId = ""; // token was removed for privacy purposes until the website gets deployed 100%
-
+// defined the multiple options available for the user through the app
+// these are also announced when the user will logina nd will be asked for their oath
 const scopes = [
-    "user-read-currently-playing",
-    "user-read-recently-played",
-    "user-read-playback-state",
-    "user-top-read",
-    "user-modify-playback-state",
+    "user-read-currently-playing", "user-read-recently-played", "user-read-playback-state", "user-top-read", "user-modify-playback-state",
 ];
-
-
 export const getTokenFromResponse = () => {
     return window.location.hash
         .substring(1)
         .split("&")
-        .reduce((initial, item) => {
-            var parts = item.split("=");
-            initial[parts[0]] = decodeURIComponent(parts[1]);
-
-            return initial;
-        }, {});
+        .reduce((initial, item) => {var parts = item.split("="); initial[parts[0]] = decodeURIComponent(parts[1]); return initial;}, {});
 };
-
-export const accessUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
-    "%20"
-)}&response_type=token&show_dialog=true`;
+export const accessUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;

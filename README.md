@@ -39,3 +39,5 @@ This app was made for solely developing skills and advance learning of the tools
 
 
 => Then, the user lands automatically on the discover weekly page of his spotify account, the navigation is dynamic and the search bar also, the main commands of liking and navigating songs were implemented, along with the sidebar pannel that has albums and playlists, the only command not added was the download button and the friends viewing part...
+
+![image](https://user-images.githubusercontent.com/88591695/146693626-22b24346-f194-4028-b8d7-564a75f6108c.png)

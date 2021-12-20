@@ -7,7 +7,7 @@
 
 -This app represents a music player using the spotify api with additional edits.
 
--The main technologies used are ReactJS, JS, CSS, HTML, JSON, Firebase, material-UI, nodeJS...
+-The main technologies used are ReactJS, React Context API, JS, CSS, HTML, JSON, Firebase, material-UI, nodeJS...
 
 -The app allows paying song in real time with the spotify app, for example stopping the song on your spotify app will also stop it here. Same foes for playing it and volume adjustment wise.
 

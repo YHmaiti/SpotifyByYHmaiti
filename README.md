@@ -9,7 +9,7 @@
 
 -The main technologies used are ReactJS, React Context API, JS, CSS, HTML, JSON, Firebase, material-UI, nodeJS...
 
--The app allows paying song in real time with the spotify app, for example stopping the song on your spotify app will also stop it here. Same foes for playing it and volume adjustment wise.
+-The app allows playing songs in real time with the spotify app, for example stopping the song on your spotify app will also stop it here. Same foes for playing it and volume adjustment wise.
 
 -This app doesn't allow sharing song in real time with friends nor having access to friends current listening or so..[actions are limited to the ones mentioned in the login oath page]
 
